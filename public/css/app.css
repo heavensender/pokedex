@@ -1,0 +1,32 @@
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    #image {
+        width: 400px;
+        height: 400px;
+    }
+

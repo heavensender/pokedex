@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('./partials/head.ejs')%>
+	</head>
+	<body>
+		<header><h1>New Pokemon!</h1></header>
+		<div>
+            <form action="/pokemon" method="POST">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="type"></label>
+                <input type="text" name="type" id="type" placeholder="Type">
+                <label for="hp"></label>
+                <input type="number" name="hp" id="hp" placeholder="HP">
+                <label for="attack"></label>
+                <input type="number" name="attack" id="attack" placeholder="ATTACK">
+                <label for="defense"></label>
+                <input type="number" name="defense" id="defense" placeholder="DEFENSE">
+                <label for="img"></label>
+                <input type="text" name="img" id="img" placeholder="Image">
+                <input type="submit" value="Log New Pokemon">
+
+            </form>
+		</div>
+	</body>
+</html>
