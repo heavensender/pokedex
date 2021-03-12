@@ -14,12 +14,10 @@ app.use(express.static('public'));
 const pokemons = require('./models/pokemon');
 
 //////////////////////Routes/////////////////////////
-app.get('/', (req, res) => {
-	res.send('Hello World, Pokedex');
-});
+
 
 //////Index route///////
-app.get('/pokemon', (req, res) => {
+app.get('/', (req, res) => {
 	res.render('index.ejs', { allPokemons: pokemons });
 });
 //////New route///////
